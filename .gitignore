@@ -1,0 +1,45 @@
+# Build output
+/bin/
+/obj/
+/publish/
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Rider / JetBrains
+.idea/
+*.sln.iml
+
+# Visual Studio
+.vs/
+*.vsp
+*.vspx
+
+# Visual Studio Code
+.vscode/
+
+# .NET Core / .NET
+project.lock.json
+project.assets.json
+*.cache
+*.generated.cs
+
+# NuGet
+packages/
+*.nupkg
+nuget.exe
+
+# Test results
+TestResults/
+*.trx
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+ehthumbs.db
+Desktop.ini

@@ -1,0 +1,40 @@
+using Avalonia.Controls;
+using Avalonia.Interactivity;
+
+namespace TaskPlanner;
+
+public partial class ColumnControl : UserControl
+{
+    public ColumnControl()
+    {
+        InitializeComponent();
+
+        /*
+         if (DataContext is Column column)
+        Проверка типа: Является ли DataContext объектом типа Column?
+        Приведение типа: Если да — сохранить его в переменную column
+        // Старый способ
+        if (DataContext is Column)
+        {
+            var column = (Column)DataContext;
+            ...
+        }
+        DataContext и DataContextChanged это просто свойства класса, унаследованные от FrameworkElement
+        Для примера можно обратиться к нему просто как this.DataCoоntext
+        */
+        DataContextChanged += (_, _) =>
+        {
+            if (DataContext is Column column)
+            {
+                TitleText.Text = column.Name;
+                ColumnID.Text = column.Id.ToString();
+            }
+        };
+    }
+
+    private void OnDeleteClick(object sender, RoutedEventArgs e)
+    {
+        if (DataContext is Column column)
+            AppState.Columns.Remove(column);
+    }
+}
