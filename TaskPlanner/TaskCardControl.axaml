@@ -11,8 +11,8 @@
     <Border Classes="BaseBorder" x:Name="DraggableCard">
         <Border.ContextMenu>
             <ContextMenu>
-                <MenuItem Header="Переместить вправо"/>
-                <MenuItem Header="Переместить влево"/>
+                <MenuItem Header="Переместить вправо" Click="OnMoveToRight"/>
+                <MenuItem Header="Переместить влево" Click="OnMoveToLeft"/>
                 <!--<MenuItem Header="Переместить вправо" Click="OnMoveToRight"/>-->
                 
             </ContextMenu>

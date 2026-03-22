@@ -42,6 +42,6 @@ public partial class ColumnControl : UserControl
     private void OnAddCardClick(object sender, RoutedEventArgs e)
     {
         if (DataContext is Column column)
-            column.Cards.Add(new TaskCard("Новая задача"));
+            column.Cards.Add(new TaskCard("Новая задача", column));
     }
 }
