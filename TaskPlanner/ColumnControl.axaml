@@ -17,8 +17,6 @@
             
             <TextBlock x:Name="ColumnID"/>
             <Button Click="OnAddCardClick">Новая задача</Button>
-            <TextBlock>Строка 1</TextBlock>
-            <TextBlock>Строка 2</TextBlock>
             <ItemsControl x:Name="Tasks">
                 <ItemsControl.ItemTemplate>
                     <DataTemplate x:DataType="models:TaskCard">

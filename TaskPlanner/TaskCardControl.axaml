@@ -1,25 +1,29 @@
 <UserControl xmlns="https://github.com/avaloniaui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
-             x:Class="TaskPlanner.TaskCardControl">
+                         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+                         x:Class="TaskPlanner.TaskCardControl">
     <UserControl.Styles>
         <StyleInclude Source="/TaskCardControlStyles.axaml"/>
     </UserControl.Styles>
 
-    <Border Classes="BaseBorder" x:Name="DraggableCard">
-        <Border.ContextMenu>
-            <ContextMenu>
-                <MenuItem Header="Переместить вправо" Click="OnMoveToRight"/>
-                <MenuItem Header="Переместить влево" Click="OnMoveToLeft"/>
-                <!--<MenuItem Header="Переместить вправо" Click="OnMoveToRight"/>-->
+
+
+        <Border x:Name="DraggableCard">
+            <Border.ContextMenu>
+                <ContextMenu>
+                    <MenuItem Header="Переместить вправо" Click="OnMoveToRight"/>
+                    <MenuItem Header="Переместить влево" Click="OnMoveToLeft"/>
+                    <!--<MenuItem Header="Переместить вправо" Click="OnMoveToRight"/>-->
                 
-            </ContextMenu>
-        </Border.ContextMenu>
-        <DockPanel>
-            <TextBox x:Name="TaskCardText" HorizontalAlignment="Left"/>
-            <Button HorizontalAlignment="Right">x</Button>
-        </DockPanel>
-    </Border>
+                </ContextMenu>
+            </Border.ContextMenu>
+            <DockPanel>
+                <TextBox x:Name="TaskCardText" HorizontalAlignment="Left"/>
+                <Button HorizontalAlignment="Right" Click="OnDeleteClick">x</Button>
+            </DockPanel>
+        </Border>
+
+    
 </UserControl>

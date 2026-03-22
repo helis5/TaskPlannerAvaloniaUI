@@ -6,5 +6,10 @@
         </Border>
     </Design.PreviewWith>
 
-    <!-- Add Styles Here -->
+    <Style Selector="Border#DraggableCard">
+        <Setter Property="CornerRadius" Value="10"/>
+        <Setter Property="Padding" Value="10"/>
+        <Setter Property="Margin" Value="0 0 15 15"/>
+        <Setter Property="Background" Value="DarkSlateBlue"/>
+    </Style>
 </Styles>

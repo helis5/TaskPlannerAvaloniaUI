@@ -55,4 +55,14 @@ public partial class TaskCardControl : UserControl
             AppState.Columns[nextIndex].Cards.Add(card);
         }
     }
+    
+    private void OnDeleteClick(object sender, RoutedEventArgs e)
+    {
+        if (DataContext is TaskCard card)
+        {
+            var currentIndex = AppState.Columns.IndexOf(card.ParentColumn);
+            AppState.Columns[currentIndex].Cards.Remove(card);
+        }
+            
+    }
 }

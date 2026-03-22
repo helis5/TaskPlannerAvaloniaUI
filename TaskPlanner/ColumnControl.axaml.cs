@@ -20,7 +20,7 @@ public partial class ColumnControl : UserControl
             ...
         }
         DataContext и DataContextChanged это просто свойства класса, унаследованные от FrameworkElement
-        Для примера можно обратиться к нему просто как this.DataCoоntext
+        Для примера можно обратиться к нему просто как this.DataCоntext
         */
         DataContextChanged += (_, _) =>
         {
