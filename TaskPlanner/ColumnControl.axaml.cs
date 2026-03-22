@@ -28,6 +28,8 @@ public partial class ColumnControl : UserControl
             {
                 TitleText.Text = column.Name;
                 ColumnID.Text = column.Id.ToString();
+                
+                Tasks.ItemsSource = column.Cards;
             }
         };
     }
@@ -36,5 +38,10 @@ public partial class ColumnControl : UserControl
     {
         if (DataContext is Column column)
             AppState.Columns.Remove(column);
+    }
+    private void OnAddCardClick(object sender, RoutedEventArgs e)
+    {
+        if (DataContext is Column column)
+            column.Cards.Add(new TaskCard("Новая задача"));
     }
 }

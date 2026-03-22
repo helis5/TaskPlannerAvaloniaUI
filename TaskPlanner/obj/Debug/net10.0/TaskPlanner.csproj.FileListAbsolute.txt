@@ -71,3 +71,4 @@
 /home/helis/Projects/TaskPlanner/TaskPlanner/obj/Debug/net10.0/TaskPlanner.pdb
 /home/helis/Projects/TaskPlanner/TaskPlanner/obj/Debug/net10.0/TaskPlanner.genruntimeconfig.cache
 /home/helis/Projects/TaskPlanner/TaskPlanner/obj/Debug/net10.0/ref/TaskPlanner.dll
+/home/helis/Projects/TaskPlanner/TaskPlanner/obj/Debug/net10.0/TaskPlanner.sourcelink.json

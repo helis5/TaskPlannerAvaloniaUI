@@ -11,6 +11,7 @@ public partial class MainWindow : Window
         ColumnList.ItemsSource = AppState.Columns;
         //временно
         AppState.Columns.Add(new Column("Автоматический столбец"));
+        AppState.Columns[0].Cards.Add(new TaskCard("Купить молоко"));
     }
 
     private void OnAddColumnClick(object sender, RoutedEventArgs e)
