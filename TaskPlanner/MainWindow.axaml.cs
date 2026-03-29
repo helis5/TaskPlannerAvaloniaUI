@@ -1,3 +1,4 @@
+using System.Threading.Tasks;
 using Avalonia.Controls;
 using Avalonia.Interactivity;
 
@@ -26,5 +27,15 @@ public partial class MainWindow : Window
         );
 
         NewTitle.Text = "";
+    }
+
+    private async void OnSaveClick(object? sender, RoutedEventArgs e)
+    {
+        await AppState.SaveAsync();
+    }
+    
+    private async void OnLoadClick(object? sender, RoutedEventArgs e)
+    {
+        await AppState.LoadAsync();
     }
 }

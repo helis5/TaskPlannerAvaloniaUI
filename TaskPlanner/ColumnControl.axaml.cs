@@ -30,6 +30,11 @@ public partial class ColumnControl : UserControl
                 ColumnID.Text = column.Id.ToString();
                 
                 Tasks.ItemsSource = column.Cards;
+                
+                TitleText.TextChanged += (_, _) =>
+                {
+                    column.Name = TitleText.Text ?? "";
+                };
             }
         };
     }

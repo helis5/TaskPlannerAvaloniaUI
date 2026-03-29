@@ -9,8 +9,8 @@ namespace TaskPlanner;
 public abstract class BaseEntity
 {
     public Guid Id { get; init; } = Guid.NewGuid();
-    public DateTime CreatedAt { get; init; } = DateTime.Now;
+    /*public DateTime CreatedAt { get; init; } = DateTime.Now;
     public DateTime UpdatedAt { get; protected set; } = DateTime.Now;
 
-    protected void MarkUpdated() => UpdatedAt = DateTime.Now;
+    protected void MarkUpdated() => UpdatedAt = DateTime.Now;*/
 }

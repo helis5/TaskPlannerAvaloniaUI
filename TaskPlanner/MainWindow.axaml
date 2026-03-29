@@ -14,6 +14,8 @@
         <StackPanel Orientation="Horizontal">
             <TextBox x:Name="NewTitle" Watermark="Название столбца"/>
             <Button Content="+ Добавить столбец" Click="OnAddColumnClick"/>
+            <Button Content="Сохранить в файл" Click="OnSaveClick"/>
+            <Button Content="Загрузить из файла" Click="OnLoadClick"/>
         </StackPanel>
 
         <ScrollViewer Grid.Row="1"
