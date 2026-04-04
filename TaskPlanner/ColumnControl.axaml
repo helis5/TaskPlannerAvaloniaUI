@@ -12,7 +12,7 @@
         <StackPanel Orientation="Vertical">
             <StackPanel Orientation="Horizontal">
                 <TextBox x:Name="TitleText"/>
-                <Button Content="x" Click="OnDeleteClick"/>
+                <Button Content="x" Click="OnDeleteCardClick"/>
             </StackPanel>
             
             <TextBlock x:Name="ColumnID"/>

@@ -2,9 +2,10 @@ using System;
 
 namespace TaskPlanner;
 
+/// <summary>
 /// Абстрактный базовый класс для всех сущностей.
 /// Инкапсулирует общие поля: идентификатор и даты.
-///
+/// </summary>
 
 public abstract class BaseEntity
 {

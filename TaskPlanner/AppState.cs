@@ -6,7 +6,9 @@ using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace TaskPlanner;
-
+/// <summary>
+/// Хранит коллекцию колонок, каждая из которых хранит свою коллекцию карточек
+/// </summary>
 public static class AppState 
 { 
     public static ObservableCollection<Column> Columns { get; } = new();

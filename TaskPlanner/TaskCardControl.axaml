@@ -2,6 +2,7 @@
                          xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                          xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
                          xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                         xmlns:models="clr-namespace:TaskPlanner"
                          mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
                          x:Class="TaskPlanner.TaskCardControl">
     <UserControl.Styles>
@@ -14,14 +15,38 @@
                 <ContextMenu>
                     <MenuItem Header="Переместить вправо" Click="OnMoveToRight"/>
                     <MenuItem Header="Переместить влево" Click="OnMoveToLeft"/>
+                    <MenuItem Header="Редактировать подзадачи" Click="OnEditSubTasks"/>
+                    <MenuItem Header="Новая подзадача" Click="OnNewSubTask"/>
                     <!--<MenuItem Header="Переместить вправо" Click="OnMoveToRight"/>-->
                 
                 </ContextMenu>
             </Border.ContextMenu>
-            <DockPanel>
-                <TextBox x:Name="TaskCardText" HorizontalAlignment="Left"/>
-                <Button HorizontalAlignment="Right" Click="OnDeleteClick">x</Button>
-            </DockPanel>
+            <StackPanel Orientation="Vertical">
+                <DockPanel>
+                    <TextBox x:Name="TaskCardText" HorizontalAlignment="Left"/>
+                    <Button HorizontalAlignment="Right" Click="OnDeleteClick">x</Button>
+                </DockPanel>
+                <!--Пока что не работает-->
+                <Border x:Name="SubTasksBorder">
+                    <ScrollViewer
+                        VerticalScrollBarVisibility="Auto"
+                        HorizontalScrollBarVisibility="Disabled">
+                        <ItemsControl x:Name="SubTaskList">
+                            <ItemsControl.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <StackPanel Orientation="Vertical"/>
+                                </ItemsPanelTemplate>
+                            </ItemsControl.ItemsPanel>
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate x:DataType="models:SubTask">
+                                    <models:SubTaskControl/>
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+                        </ItemsControl>
+                    </ScrollViewer>
+                </Border>
+                
+            </StackPanel>
         </Border>
 
     

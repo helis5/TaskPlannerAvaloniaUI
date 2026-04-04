@@ -38,8 +38,8 @@ public partial class ColumnControl : UserControl
             }
         };
     }
-
-    private void OnDeleteClick(object sender, RoutedEventArgs e)
+    
+    private void OnDeleteCardClick(object sender, RoutedEventArgs e)
     {
         if (DataContext is Column column)
             AppState.Columns.Remove(column);
@@ -48,5 +48,6 @@ public partial class ColumnControl : UserControl
     {
         if (DataContext is Column column)
             column.Cards.Add(new TaskCard("Новая задача", column));
+        
     }
 }

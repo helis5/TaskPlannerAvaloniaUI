@@ -38,6 +38,12 @@ build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 [/home/helis/Projects/TaskPlanner/TaskPlanner/MainWindowStyles.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
+[/home/helis/Projects/TaskPlanner/TaskPlanner/SubTaskControl.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[/home/helis/Projects/TaskPlanner/TaskPlanner/SubTaskControlStyles.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
 [/home/helis/Projects/TaskPlanner/TaskPlanner/TaskCardControl.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 

@@ -29,5 +29,8 @@
       <AvaloniaXaml Update="TaskCardControlStyles.axaml">
         <DependentUpon>TaskCardControl.axaml</DependentUpon>
       </AvaloniaXaml>
+      <AvaloniaXaml Update="SubTaskControlStyles.axaml">
+        <DependentUpon>SubTaskControl.axaml</DependentUpon>
+      </AvaloniaXaml>
     </ItemGroup>
 </Project>

@@ -12,4 +12,12 @@
         <Setter Property="Margin" Value="0 0 15 15"/>
         <Setter Property="Background" Value="DarkSlateBlue"/>
     </Style>
+    
+    <Style Selector="Border#SubTasksBorder">
+        <Setter Property="CornerRadius" Value="10"/>
+        <Setter Property="BorderThickness" Value="3"/>
+        <!--<Setter Property="Padding" Value="10"/>-->
+        <!--<Setter Property="Margin" Value="0 0 15 15"/>-->
+        <Setter Property="BorderBrush" Value="Black"/>
+    </Style>
 </Styles>
