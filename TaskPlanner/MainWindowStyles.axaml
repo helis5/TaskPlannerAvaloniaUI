@@ -5,12 +5,15 @@
             <!-- Add Controls for Previewer Here -->
         </Border>
     </Design.PreviewWith>
-
+    <Style Selector="Grid#MainGrid">
+        <Setter Property="Background" Value="#1A1D27"/>
+    </Style>
     <Style Selector="Border.BaseBorder">
         <Setter Property="BorderBrush" Value="Gray"/>
         <Setter Property="BorderThickness" Value="3"/>
         <Setter Property="CornerRadius" Value="10"/>
         <Setter Property="Padding" Value="10"/>
         <Setter Property="Margin" Value="0 0 15 15"/>
+        <Setter Property="Background" Value="#0F1117"/>
     </Style>
 </Styles>

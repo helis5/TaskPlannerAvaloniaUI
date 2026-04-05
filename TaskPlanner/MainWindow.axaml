@@ -10,7 +10,7 @@
         <StyleInclude Source="/MainWindowStyles.axaml"/>
     </Window.Styles>
 
-    <Grid RowDefinitions="50, *">
+    <Grid RowDefinitions="50, *" x:Name="MainGrid">
         <StackPanel Orientation="Horizontal">
             <TextBox x:Name="NewTitle" Watermark="Название столбца"/>
             <Button Content="+ Добавить столбец" Click="OnAddColumnClick"/>

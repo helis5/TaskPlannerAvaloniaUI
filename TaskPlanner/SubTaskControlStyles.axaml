@@ -10,13 +10,13 @@
         <!--<Setter Property="BorderBrush" Value="Green" />-->
         <Setter Property="BorderThickness" Value="0" />
         <Setter Property="CornerRadius" Value="0"/>
-        <Setter Property="Background" Value="DarkSlateBlue" />
+        <Setter Property="Background" Value="Transparent" />
     </Style>
     <Style Selector="DockPanel:disabled Button">
         <Setter Property="IsVisible" Value="False"/>
     </Style>
 
     <Style Selector="TextBox:disabled">
-        <Setter Property="Foreground" Value="Black" />
+        <Setter Property="Foreground" Value="White" />
     </Style>
 </Styles>

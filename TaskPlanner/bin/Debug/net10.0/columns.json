@@ -27,6 +27,14 @@
           {
             "Title": "random subtask",
             "Id": "f98d45bd-3be0-4b11-84ff-ddb146c0d3a6"
+          },
+          {
+            "Title": "random subtask",
+            "Id": "88f99a96-76df-4e9e-9f7e-4b9dd5443a10"
+          },
+          {
+            "Title": "random subtask",
+            "Id": "0074bfe5-4c23-4d4d-994b-519a188602d8"
           }
         ],
         "Id": "da1284bf-eb18-40a2-ae6d-a4c539c47406"
@@ -61,7 +69,20 @@
       },
       {
         "Title": "\u041D\u043E\u0432\u0430\u044F \u0437\u0430\u0434\u0430\u0447\u0430",
-        "SubTasks": [],
+        "SubTasks": [
+          {
+            "Title": "random subtask",
+            "Id": "3c62ad0c-194e-4ebe-bc21-521d2931295e"
+          },
+          {
+            "Title": "random subtask",
+            "Id": "ab0c2761-20b2-4cd9-893b-07e4538babda"
+          },
+          {
+            "Title": "random subtask",
+            "Id": "ab82fddd-9b36-47cc-9975-f50fcb44709f"
+          }
+        ],
         "Id": "bbc7288a-11f1-4ce1-ae45-c9f8a5434f52"
       }
     ],

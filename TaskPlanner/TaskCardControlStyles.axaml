@@ -5,12 +5,14 @@
             <!-- Add Controls for Previewer Here -->
         </Border>
     </Design.PreviewWith>
-
+    
     <Style Selector="Border#DraggableCard">
-        <Setter Property="CornerRadius" Value="10"/>
+        <Setter Property="CornerRadius" Value="0 4 4 0"/>
+        <Setter Property="Background" Value="#22263A"/>
+        <Setter Property="Margin" Value="0 0 0 10 "/>
+    </Style>
+    <Style Selector="Border#Content">
         <Setter Property="Padding" Value="10"/>
-        <Setter Property="Margin" Value="0 0 15 15"/>
-        <Setter Property="Background" Value="DarkSlateBlue"/>
     </Style>
     <!--<Style Selector="TextBox:disabled /template/ Border#PART_BorderElement">
         ~1~<Setter Property="BorderBrush" Value="Green" />@1@
@@ -22,7 +24,7 @@
 
     <Style Selector="Border#SubTasksBorder">
         <Setter Property="CornerRadius" Value="10"/>
-        <Setter Property="Background" Value="DarkSlateBlue"/>
+        
         <Setter Property="BorderThickness" Value="0"/>
         <!--<Setter Property="Padding" Value="10"/>-->
         <!--<Setter Property="Margin" Value="0 0 15 15"/>-->
