@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.IO;
@@ -13,7 +14,8 @@ public static class AppState
 { 
     public static ObservableCollection<Column> Columns { get; } = new();
     
-    private const string FilePath = "columns.json";
+    // private const string FilePath = "columns.json";
+    private static readonly string FilePath = Path.Combine(AppContext.BaseDirectory, "columns.json");
 
     // Сохранение
     public static async Task SaveAsync()
