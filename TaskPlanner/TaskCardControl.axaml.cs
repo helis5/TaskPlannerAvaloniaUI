@@ -15,7 +15,7 @@ public partial class TaskCardControl : UserControl
     public TaskCardControl()
     {
         InitializeComponent();
-        SubTasksBorder.IsEnabled = false;
+  
         DataContextChanged += (_, _) =>
         {
             if (DataContext is TaskCard card)
@@ -31,7 +31,10 @@ public partial class TaskCardControl : UserControl
 
                 SubTaskList.ItemsSource = card.SubTasks;
                 StripeBorder.Background = PriorityColors[card.PriorityIndex];
+                
+                Content.IsEnabled = card.IsEnabled;
             }
+            
         };
         /*if (DataContext is TaskCard card)
         {
@@ -106,11 +109,20 @@ public partial class TaskCardControl : UserControl
         {
             //Желательно переделать в окно редартора задачи
             //card.SubTasks.Add(new SubTask("random subtask", card));
-            if (SubTasksBorder.IsEnabled == false) SubTasksBorder.IsEnabled = true;
-            else SubTasksBorder.IsEnabled = false;
+            /*if (SubTasksBorder.IsEnabled == false) SubTasksBorder.IsEnabled = true;
+            else SubTasksBorder.IsEnabled = false;*/
+
+            if (card.IsEnabled == false)
+            {
+                card.IsEnabled = true;
+                Content.IsEnabled = card.IsEnabled;
+            }
+            else
+            {
+                card.IsEnabled = false;
+                Content.IsEnabled = card.IsEnabled;
+            }
             
-            if (Content.IsEnabled == false) Content.IsEnabled = true;
-            else Content.IsEnabled = false;
         }
     }
 

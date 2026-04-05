@@ -4,117 +4,43 @@
     "Cards": [
       {
         "Title": "\u041A\u0443\u043F\u0438\u0442\u044C \u043C\u043E\u043B\u043E\u043A\u043E",
-        "PriorityIndex": 2,
-        "SubTasks": [],
-        "Id": "fc5a502a-d3f8-443a-8df6-2f8ba18e04d4"
-      },
-      {
-        "Title": "\u041D\u043E\u0432\u0430\u044F \u0437\u0430\u0434\u0430\u0447\u0430",
         "PriorityIndex": 0,
+        "IsEnabled": true,
         "SubTasks": [
           {
-            "Title": "random subtask",
-            "Id": "d34ba34e-71fd-4883-8d05-79e332be0fce"
+            "Title": "ergwerg",
+            "Id": "e27c9b0f-4107-4e25-87f1-69eaa9f92a4d"
+          },
+          {
+            "Title": "wergw",
+            "Id": "dcc71845-06a7-4a62-8154-c292b5e4b330"
+          },
+          {
+            "Title": "ergw",
+            "Id": "5daa9758-aca0-4d99-aff8-72f9002865bc"
+          },
+          {
+            "Title": "ergwergwerge",
+            "Id": "598e82b0-e706-4562-8a13-14ac38f944d2"
           }
         ],
-        "Id": "76e7a59c-ea92-47b6-8e23-734f86916651"
+        "Id": "c1450bda-d48e-433f-998e-84185caece29"
       },
       {
-        "Title": "\u041D\u043E\u0432\u0430\u044F \u0437\u0430\u0434\u0430\u0447\u0430",
-        "PriorityIndex": 1,
-        "SubTasks": [
-          {
-            "Title": "random subtask",
-            "Id": "8abaf938-6ac9-4002-b5c6-ff69627f949a"
-          },
-          {
-            "Title": "random subtask",
-            "Id": "f98d45bd-3be0-4b11-84ff-ddb146c0d3a6"
-          },
-          {
-            "Title": "random subtask",
-            "Id": "88f99a96-76df-4e9e-9f7e-4b9dd5443a10"
-          },
-          {
-            "Title": "random subtask",
-            "Id": "0074bfe5-4c23-4d4d-994b-519a188602d8"
-          }
-        ],
-        "Id": "da1284bf-eb18-40a2-ae6d-a4c539c47406"
+        "Title": "",
+        "PriorityIndex": 0,
+        "IsEnabled": true,
+        "SubTasks": [],
+        "Id": "a70dcbf6-bcc2-49df-8b42-465ae90cb5ed"
+      },
+      {
+        "Title": "",
+        "PriorityIndex": 0,
+        "IsEnabled": true,
+        "SubTasks": [],
+        "Id": "3878e793-89a1-4219-9afb-27977d1cf1a5"
       }
     ],
-    "Id": "f344b807-a61a-4a6e-9514-3fe8725c6906"
-  },
-  {
-    "Name": "\u041D\u0430\u0437\u0432\u0430\u043D\u0438\u0435 \u0441\u0442\u043E\u043B\u0431\u0446\u0430",
-    "Cards": [
-      {
-        "Title": "\u041D\u043E\u0432\u0430\u044F \u0437\u0430\u0434\u0430\u0447\u0430",
-        "PriorityIndex": 1,
-        "SubTasks": [
-          {
-            "Title": "3eg",
-            "Id": "1e7d02f2-968b-4dc1-85a6-7a8fc384d130"
-          },
-          {
-            "Title": "wergwergsubtwergwerg",
-            "Id": "98b0e239-ede7-4c02-9a28-2277e40f7297"
-          },
-          {
-            "Title": "rwerg",
-            "Id": "29b937e5-b378-48b0-98e2-750525f6a113"
-          },
-          {
-            "Title": "hw",
-            "Id": "446f1daf-f45c-42ad-a048-d810f8ba3484"
-          }
-        ],
-        "Id": "0817e385-ea0c-42c1-92ed-5bd0fcae2c99"
-      },
-      {
-        "Title": "\u041D\u043E\u0432\u0430\u044F \u0437\u0430\u0434\u0430\u0447\u0430",
-        "PriorityIndex": 2,
-        "SubTasks": [
-          {
-            "Title": "random subtask",
-            "Id": "3c62ad0c-194e-4ebe-bc21-521d2931295e"
-          },
-          {
-            "Title": "random subtask",
-            "Id": "ab0c2761-20b2-4cd9-893b-07e4538babda"
-          },
-          {
-            "Title": "random subtask",
-            "Id": "ab82fddd-9b36-47cc-9975-f50fcb44709f"
-          }
-        ],
-        "Id": "bbc7288a-11f1-4ce1-ae45-c9f8a5434f52"
-      },
-      {
-        "Title": "\u041D\u043E\u0432\u0430\u044F \u0437\u0430\u0434\u0430\u0447\u0430",
-        "PriorityIndex": 0,
-        "SubTasks": [],
-        "Id": "94e22d18-aefc-4e9d-89a4-8b1b6ac5bbf4"
-      },
-      {
-        "Title": "\u041D\u043E\u0432\u0430\u044F \u0437\u0430\u0434\u0430\u0447\u0430",
-        "PriorityIndex": 0,
-        "SubTasks": [],
-        "Id": "717bbb1a-62c7-4da4-a57d-816a086c86cc"
-      }
-    ],
-    "Id": "35e95105-a684-4f6e-86d7-970fed2bd102"
-  },
-  {
-    "Name": "\u041D\u0430\u0437\u0432\u0430\u043D\u0438\u0435 \u0441\u0442\u043E\u043B\u0431\u0446\u0430",
-    "Cards": [
-      {
-        "Title": "\u041D\u043E\u0432\u0430\u044F \u0437\u0430\u0434\u0430\u0447\u0430",
-        "PriorityIndex": 0,
-        "SubTasks": [],
-        "Id": "4c8d756b-f391-4d3f-a0c3-69ff57d5fcce"
-      }
-    ],
-    "Id": "26764045-bca0-4466-ae67-9869463dd90d"
+    "Id": "a31b2101-7011-4fc7-baa5-1d76c9bf6e8c"
   }
 ]

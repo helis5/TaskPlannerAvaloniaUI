@@ -7,6 +7,7 @@
     {
         public string Title { get; set; }
         public int PriorityIndex { get; set; } = 0;
+        public bool IsEnabled { get; set; } = true;
         
         public ObservableCollection<SubTask> SubTasks { get; set; } = new();
         

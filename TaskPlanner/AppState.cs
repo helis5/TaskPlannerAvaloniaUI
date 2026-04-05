@@ -44,6 +44,7 @@ public static class AppState
             foreach (var card in col.Cards)
             {
                 card.ParentColumn = col;
+                card.IsEnabled = false;
 
                 foreach (var subTask in card.SubTasks)
                     subTask.ParentCard = card;

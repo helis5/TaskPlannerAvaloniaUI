@@ -50,6 +50,5 @@ public partial class ColumnControl : UserControl
     {
         if (DataContext is Column column)
             column.Cards.Add(new TaskCard("", column));
-        
     }
 }

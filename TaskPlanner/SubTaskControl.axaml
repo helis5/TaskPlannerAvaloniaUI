@@ -19,7 +19,10 @@
         <StackPanel Orientation="Vertical">
             <DockPanel>
                 <Ellipse Width="8" Height="8" Margin="0 0 10 0" Fill="#E8EAF0" VerticalAlignment="Center"/>
-                <TextBox x:Name="SubTaskText" HorizontalAlignment="Left" Watermark="Пункт"/>
+                <TextBox x:Name="SubTaskText" HorizontalAlignment="Left" Watermark="Пункт" 
+                         TextWrapping="Wrap"
+                         MaxWidth="200"
+                         AcceptsReturn="False"/>
                 <Button HorizontalAlignment="Right" Click="OnDeleteClick">x</Button>
             </DockPanel>
         </StackPanel>

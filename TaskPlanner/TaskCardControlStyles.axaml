@@ -9,7 +9,7 @@
     <Style Selector="Border#DraggableCard">
         <Setter Property="CornerRadius" Value="0 4 4 0"/>
         <Setter Property="Background" Value="#22263A"/>
-        <Setter Property="Margin" Value="0 0 0 10 "/>
+        <Setter Property="Margin" Value="0 10 0 0 "/>
     </Style>
     <Style Selector="Border#Content">
         <Setter Property="Padding" Value="10"/>

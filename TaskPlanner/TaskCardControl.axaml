@@ -26,11 +26,16 @@
                     CornerRadius="10 0 0 10" />
 
             <!-- Основной контент -->
-            <Border Grid.Column="1" x:Name="Content" IsEnabled="False">
+            <Border Grid.Column="1" x:Name="Content">
 
                 <StackPanel Orientation="Vertical">
                     <DockPanel>
-                        <TextBox x:Name="TaskCardText" HorizontalAlignment="Left" Watermark="Заголовок" FontWeight="Bold" FontSize="16"/>
+                        <TextBox x:Name="TaskCardText" HorizontalAlignment="Left" Watermark="Заголовок" 
+                                 FontWeight="Bold" 
+                                 FontSize="16"
+                                 TextWrapping="Wrap"
+                                 MaxWidth="200"
+                                 AcceptsReturn="False"/>
                         <Button HorizontalAlignment="Right" Click="OnDeleteClick">x</Button>
                     </DockPanel>
 
