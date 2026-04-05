@@ -16,4 +16,10 @@
         <Setter Property="Margin" Value="0 0 15 15"/>
         <Setter Property="Background" Value="#0F1117"/>
     </Style>
+    <Style Selector="Border#Header">
+        <Setter Property="Padding" Value="10"/>
+    </Style>
+    <Style Selector="Border#Header StackPanel Button">
+        <Setter Property="Margin" Value="10 0 0 0"/>
+    </Style>
 </Styles>

@@ -30,7 +30,14 @@
         <!--<Setter Property="Margin" Value="0 0 15 15"/>-->
         <Setter Property="BorderBrush" Value="Black"/>
     </Style>
-    <!--<Style Selector="Panel:disabled Border#SubTasksBorder">
-        <Setter Property="BorderThickness" Value="0"/>
-    </Style>-->
+
+    <Style Selector="TextBox:disabled /template/ Border#PART_BorderElement">
+        <!--<Setter Property="BorderBrush" Value="Green" />-->
+        <Setter Property="BorderThickness" Value="0" />
+        <Setter Property="CornerRadius" Value="0"/>
+        <Setter Property="Background" Value="Transparent" />
+    </Style>
+    <Style Selector="TextBox:disabled">
+        <Setter Property="Foreground" Value="White" />
+    </Style>
 </Styles>

@@ -108,6 +108,9 @@ public partial class TaskCardControl : UserControl
             //card.SubTasks.Add(new SubTask("random subtask", card));
             if (SubTasksBorder.IsEnabled == false) SubTasksBorder.IsEnabled = true;
             else SubTasksBorder.IsEnabled = false;
+            
+            if (Content.IsEnabled == false) Content.IsEnabled = true;
+            else Content.IsEnabled = false;
         }
     }
 

@@ -11,8 +11,8 @@
     <Border HorizontalAlignment="Stretch" x:Name="DraggableCard">
         <Border.ContextMenu>
             <ContextMenu>
-                <MenuItem Header="Редактировать подзадачи" Click="OnEditSubTasks"/>
                 <MenuItem Header="Новая подзадача" Click="OnNewSubTask"/>
+                <MenuItem Header="Редактировать задачу" Click="OnEditSubTasks"/>
                 <MenuItem Header="Переместить вправо" Click="OnMoveToRight"/>
                 <MenuItem Header="Переместить влево" Click="OnMoveToLeft"/>
                 <MenuItem Header="Изменить срочность" Click="OnChangePriority"/>
@@ -26,11 +26,11 @@
                     CornerRadius="10 0 0 10" />
 
             <!-- Основной контент -->
-            <Border Grid.Column="1" x:Name="Content">
+            <Border Grid.Column="1" x:Name="Content" IsEnabled="False">
 
                 <StackPanel Orientation="Vertical">
                     <DockPanel>
-                        <TextBox x:Name="TaskCardText" HorizontalAlignment="Left" Watermark="Заголовок"/>
+                        <TextBox x:Name="TaskCardText" HorizontalAlignment="Left" Watermark="Заголовок" FontWeight="Bold" FontSize="16"/>
                         <Button HorizontalAlignment="Right" Click="OnDeleteClick">x</Button>
                     </DockPanel>
 
