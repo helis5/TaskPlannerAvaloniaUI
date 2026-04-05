@@ -1,0 +1,1 @@
+/home/helis/Projects/TaskPlanner/TaskPlanner/bin/Release/net10.0/linux-x64/publish/TaskPlanner

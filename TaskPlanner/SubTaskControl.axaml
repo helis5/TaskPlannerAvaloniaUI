@@ -18,6 +18,7 @@
         </Border.ContextMenu>-->
         <StackPanel Orientation="Vertical">
             <DockPanel>
+                <Ellipse Width="8" Height="8" Fill="White" VerticalAlignment="Center"/>
                 <TextBox x:Name="SubTaskText" HorizontalAlignment="Left"/>
                 <Button HorizontalAlignment="Right" Click="OnDeleteClick">x</Button>
             </DockPanel>

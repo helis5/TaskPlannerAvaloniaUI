@@ -1,4 +1,5 @@
 using Avalonia.Controls;
+using Avalonia.Controls.Notifications;
 using Avalonia.Interactivity;
 
 namespace TaskPlanner;
@@ -43,6 +44,7 @@ public partial class ColumnControl : UserControl
     {
         if (DataContext is Column column)
             AppState.Columns.Remove(column);
+        App.Notify("Успех", "Столбец удалён", NotificationType.Success);
     }
     private void OnAddCardClick(object sender, RoutedEventArgs e)
     {

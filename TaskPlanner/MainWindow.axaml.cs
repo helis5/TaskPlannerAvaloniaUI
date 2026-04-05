@@ -1,5 +1,6 @@
 using System.Threading.Tasks;
 using Avalonia.Controls;
+using Avalonia.Controls.Notifications;
 using Avalonia.Interactivity;
 
 namespace TaskPlanner;
@@ -27,15 +28,18 @@ public partial class MainWindow : Window
         );
 
         NewTitle.Text = "";
+        App.Notify("Успех", "Столбец создан", NotificationType.Success);
     }
 
     private async void OnSaveClick(object? sender, RoutedEventArgs e)
     {
         await AppState.SaveAsync();
+        App.Notify("Успех", "Файл сохранён", NotificationType.Success);
     }
     
     private async void OnLoadClick(object? sender, RoutedEventArgs e)
     {
         await AppState.LoadAsync();
+        App.Notify("Успех", "Файл загружен", NotificationType.Success);
     }
 }

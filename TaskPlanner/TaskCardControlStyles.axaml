@@ -12,12 +12,23 @@
         <Setter Property="Margin" Value="0 0 15 15"/>
         <Setter Property="Background" Value="DarkSlateBlue"/>
     </Style>
-    
+    <!--<Style Selector="TextBox:disabled /template/ Border#PART_BorderElement">
+        ~1~<Setter Property="BorderBrush" Value="Green" />@1@
+        <Setter Property="BorderThickness" Value="0" />
+        <Setter Property="CornerRadius" Value="10"/>
+        <Setter Property="Background" Value="DarkSlateBlue" />
+    </Style>-->
+
+
     <Style Selector="Border#SubTasksBorder">
         <Setter Property="CornerRadius" Value="10"/>
-        <Setter Property="BorderThickness" Value="3"/>
+        <Setter Property="Background" Value="DarkSlateBlue"/>
+        <Setter Property="BorderThickness" Value="0"/>
         <!--<Setter Property="Padding" Value="10"/>-->
         <!--<Setter Property="Margin" Value="0 0 15 15"/>-->
         <Setter Property="BorderBrush" Value="Black"/>
     </Style>
+    <!--<Style Selector="Panel:disabled Border#SubTasksBorder">
+        <Setter Property="BorderThickness" Value="0"/>
+    </Style>-->
 </Styles>

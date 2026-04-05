@@ -1,7 +1,9 @@
 using Avalonia;
 using Avalonia.Controls;
+using Avalonia.Controls.Notifications;
 using Avalonia.Interactivity;
 using Avalonia.Markup.Xaml;
+using Tmds.DBus.Protocol;
 
 namespace TaskPlanner;
 
@@ -46,7 +48,10 @@ public partial class TaskCardControl : UserControl
             var currentIndex = AppState.Columns.IndexOf(card.ParentColumn);
             var nextIndex = currentIndex + 1;
 
-            if (nextIndex >= AppState.Columns.Count) return;
+            if (nextIndex >= AppState.Columns.Count) {
+                App.Notify("Ошибка", "Перемещать карточку дальше нельзя", NotificationType.Error);
+                return;
+            }
 
             card.ParentColumn.Cards.Remove(card);
             card.ParentColumn = AppState.Columns[nextIndex]; // обновляем родителя
@@ -60,8 +65,12 @@ public partial class TaskCardControl : UserControl
         {
             var currentIndex = AppState.Columns.IndexOf(card.ParentColumn);
             var nextIndex = currentIndex - 1;
-
-            if (nextIndex >= AppState.Columns.Count) return;
+            
+            if (nextIndex < 0)
+            {
+                App.Notify("Ошибка", "Перемещать карточку дальше нельзя", NotificationType.Error);
+                return;
+            }
 
             card.ParentColumn.Cards.Remove(card);
             card.ParentColumn = AppState.Columns[nextIndex]; // обновляем родителя

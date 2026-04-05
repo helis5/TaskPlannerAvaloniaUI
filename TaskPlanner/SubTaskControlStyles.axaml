@@ -6,17 +6,17 @@
         </Border>
     </Design.PreviewWith>
 
-    <Style Selector="TextBox">
-        <!-- Обычное состояние -->
-        <!--<Setter Property="Background" Value="White" />-->
-        <Setter Property="Foreground" Value="White" />
-        <!--<Setter Property="BorderBrush" Value="Gray" />-->
+    <Style Selector="TextBox:disabled /template/ Border#PART_BorderElement">
+        <!--<Setter Property="BorderBrush" Value="Green" />-->
+        <Setter Property="BorderThickness" Value="0" />
+        <Setter Property="CornerRadius" Value="0"/>
+        <Setter Property="Background" Value="DarkSlateBlue" />
+    </Style>
+    <Style Selector="DockPanel:disabled Button">
+        <Setter Property="IsVisible" Value="False"/>
     </Style>
 
     <Style Selector="TextBox:disabled">
-        <!-- Отключённое состояние -->
         <Setter Property="Foreground" Value="Black" />
-        <!--<Setter Property="" Value="" />-->
-        <!--<Setter Property="Opacity" Value="0.7" />-->
     </Style>
 </Styles>
