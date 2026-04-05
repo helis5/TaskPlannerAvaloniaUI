@@ -25,7 +25,7 @@ public partial class SubTaskControl : UserControl
     
     private void OnDeleteClick(object sender, RoutedEventArgs e)
     {
-        if (DataContext is SubTask subtask)
+        if (DataContext is SubTask subtask && subtask.ParentCard != null)
         {
             //Из родительской карточки удаляем принимаемую подзадачу
             TaskCard PCard = subtask.ParentCard;

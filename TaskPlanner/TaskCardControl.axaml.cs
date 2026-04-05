@@ -29,11 +29,11 @@ public partial class TaskCardControl : UserControl
                 SubTaskList.ItemsSource = card.SubTasks;
             }
         };
-        if (DataContext is TaskCard card)
+        /*if (DataContext is TaskCard card)
         {
             card.SubTasks.Add(new SubTask("random subtask", card));
             card.SubTasks.Add(new SubTask("Вторая подзадача", card));
-        }
+        }*/
 
         //AppState.Columns[0].Cards[0].SubTasks.Add(new SubTask("Случайная задача"));
 
@@ -92,7 +92,7 @@ public partial class TaskCardControl : UserControl
         if (DataContext is TaskCard card)
         {
             //Желательно переделать в окно редартора задачи
-            card.SubTasks.Add(new SubTask("random subtask", card));
+            card.SubTasks.Add(new SubTask("", card));
         }
     }
     private void OnEditSubTasks(object sender, RoutedEventArgs e)

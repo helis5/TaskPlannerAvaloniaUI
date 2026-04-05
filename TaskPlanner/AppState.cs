@@ -30,19 +30,24 @@ public static class AppState
         if (!File.Exists(FilePath)) return;
 
         string json = await File.ReadAllTextAsync(FilePath);
-    
+
         var options = new JsonSerializerOptions
         {
-            PropertyNameCaseInsensitive = true // на случай если имена свойств не совпадают
+            PropertyNameCaseInsensitive = true
         };
-    
+
         var loaded = JsonSerializer.Deserialize<List<Column>>(json, options);
 
         Columns.Clear();
         foreach (var col in loaded ?? [])
         {
             foreach (var card in col.Cards)
+            {
                 card.ParentColumn = col;
+
+                foreach (var subTask in card.SubTasks)
+                    subTask.ParentCard = card;
+            }
 
             Columns.Add(col);
         }
