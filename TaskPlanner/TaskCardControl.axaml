@@ -11,16 +11,17 @@
     <Border HorizontalAlignment="Stretch" x:Name="DraggableCard">
         <Border.ContextMenu>
             <ContextMenu>
-                <MenuItem Header="Переместить вправо" Click="OnMoveToRight"/>
-                <MenuItem Header="Переместить влево" Click="OnMoveToLeft"/>
                 <MenuItem Header="Редактировать подзадачи" Click="OnEditSubTasks"/>
                 <MenuItem Header="Новая подзадача" Click="OnNewSubTask"/>
+                <MenuItem Header="Переместить вправо" Click="OnMoveToRight"/>
+                <MenuItem Header="Переместить влево" Click="OnMoveToLeft"/>
+                <MenuItem Header="Изменить срочность" Click="OnChangePriority"/>
             </ContextMenu>
         </Border.ContextMenu>
         <Grid ColumnDefinitions="4,*">
             
             <!-- Цветная полоска -->
-            <Border Grid.Column="0"
+            <Border Grid.Column="0" x:Name="StripeBorder"
                     Width="4"
                     Background="GreenYellow"
                     CornerRadius="10 0 0 10" />

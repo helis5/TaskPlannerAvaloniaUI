@@ -1,9 +1,12 @@
+using System.Drawing;
 using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Controls.Notifications;
 using Avalonia.Interactivity;
 using Avalonia.Markup.Xaml;
+using Avalonia.Media;
 using Tmds.DBus.Protocol;
+using Color = Avalonia.Media.Color;
 
 namespace TaskPlanner;
 
@@ -27,6 +30,7 @@ public partial class TaskCardControl : UserControl
                 
 
                 SubTaskList.ItemsSource = card.SubTasks;
+                StripeBorder.Background = PriorityColors[card.PriorityIndex];
             }
         };
         /*if (DataContext is TaskCard card)
@@ -56,6 +60,7 @@ public partial class TaskCardControl : UserControl
             card.ParentColumn.Cards.Remove(card);
             card.ParentColumn = AppState.Columns[nextIndex]; // обновляем родителя
             AppState.Columns[nextIndex].Cards.Add(card);
+            
         }
     }
     
@@ -103,6 +108,22 @@ public partial class TaskCardControl : UserControl
             //card.SubTasks.Add(new SubTask("random subtask", card));
             if (SubTasksBorder.IsEnabled == false) SubTasksBorder.IsEnabled = true;
             else SubTasksBorder.IsEnabled = false;
+        }
+    }
+
+    private static readonly SolidColorBrush[] PriorityColors =
+    [
+        new SolidColorBrush(Color.Parse("#4ADE80")),  // зелёный
+        new SolidColorBrush(Color.Parse("#FACC15")),  // жёлтый
+        new SolidColorBrush(Color.Parse("#F87171")),  // красный
+    ];
+
+    private void OnChangePriority(object sender, RoutedEventArgs e)
+    {
+        if (DataContext is TaskCard card)
+        {
+            card.PriorityIndex = (card.PriorityIndex + 1) % PriorityColors.Length;
+            StripeBorder.Background = PriorityColors[card.PriorityIndex];
         }
     }
 }

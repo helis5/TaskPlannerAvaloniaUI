@@ -6,6 +6,7 @@
     public class TaskCard : BaseEntity
     {
         public string Title { get; set; }
+        public int PriorityIndex { get; set; } = 0;
         
         public ObservableCollection<SubTask> SubTasks { get; set; } = new();
         

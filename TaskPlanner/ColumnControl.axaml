@@ -9,21 +9,24 @@
         <StyleInclude Source="/ColumnControlStyles.axaml"/>
     </UserControl.Styles>
     <Border Classes="BaseBorder">
-        <StackPanel Orientation="Vertical">
-            <DockPanel>
-                <Button Content="x" Click="OnDeleteCardClick" DockPanel.Dock="Right"/>
-                <TextBox x:Name="TitleText"/>
-            </DockPanel>
+        <ScrollViewer>
+            <StackPanel Orientation="Vertical">
+                <DockPanel>
+                    <Button Content="x" Click="OnDeleteCardClick" DockPanel.Dock="Right"/>
+                    <TextBox x:Name="TitleText"/>
+                </DockPanel>
             
-            <TextBlock x:Name="ColumnID"/>
-            <Button Click="OnAddCardClick">Новая задача</Button>
-            <ItemsControl x:Name="Tasks">
-                <ItemsControl.ItemTemplate>
-                    <DataTemplate x:DataType="models:TaskCard">
-                        <models:TaskCardControl/>
-                    </DataTemplate>
-                </ItemsControl.ItemTemplate>
-            </ItemsControl>
-        </StackPanel>
+                <TextBlock x:Name="ColumnID"/>
+                <Button Click="OnAddCardClick">Новая задача</Button>
+                <ItemsControl x:Name="Tasks">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate x:DataType="models:TaskCard">
+                            <models:TaskCardControl/>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </StackPanel>
+        </ScrollViewer>
+        
     </Border>
 </UserControl>
