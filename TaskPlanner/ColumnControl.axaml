@@ -10,10 +10,10 @@
     </UserControl.Styles>
     <Border Classes="BaseBorder">
         <StackPanel Orientation="Vertical">
-            <StackPanel Orientation="Horizontal">
+            <DockPanel>
+                <Button Content="x" Click="OnDeleteCardClick" DockPanel.Dock="Right"/>
                 <TextBox x:Name="TitleText"/>
-                <Button Content="x" Click="OnDeleteCardClick"/>
-            </StackPanel>
+            </DockPanel>
             
             <TextBlock x:Name="ColumnID"/>
             <Button Click="OnAddCardClick">Новая задача</Button>

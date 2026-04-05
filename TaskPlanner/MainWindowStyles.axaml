@@ -9,7 +9,7 @@
         <Setter Property="Background" Value="#1A1D27"/>
     </Style>
     <Style Selector="Border.BaseBorder">
-        <Setter Property="BorderBrush" Value="Gray"/>
+        <Setter Property="BorderBrush" Value="#22263A"/>
         <Setter Property="BorderThickness" Value="3"/>
         <Setter Property="CornerRadius" Value="10"/>
         <Setter Property="Padding" Value="10"/>
