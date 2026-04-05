@@ -23,7 +23,7 @@ public partial class App : Application
             //Уведомления
             Notifications = new WindowNotificationManager(desktop.MainWindow)
             {
-                Position = NotificationPosition.TopRight,
+                Position = NotificationPosition.BottomRight,
                 MaxItems = 3
             };
         }

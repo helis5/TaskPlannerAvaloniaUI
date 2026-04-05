@@ -23,7 +23,6 @@
             <!-- Цветная полоска -->
             <Border Grid.Column="0" x:Name="StripeBorder"
                     Width="4"
-                    Background="GreenYellow"
                     CornerRadius="10 0 0 10" />
 
             <!-- Основной контент -->
@@ -31,7 +30,7 @@
 
                 <StackPanel Orientation="Vertical">
                     <DockPanel>
-                        <TextBox x:Name="TaskCardText" HorizontalAlignment="Left"/>
+                        <TextBox x:Name="TaskCardText" HorizontalAlignment="Left" Watermark="Заголовок"/>
                         <Button HorizontalAlignment="Right" Click="OnDeleteClick">x</Button>
                     </DockPanel>
 

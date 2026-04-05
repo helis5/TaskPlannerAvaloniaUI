@@ -13,7 +13,7 @@
             <StackPanel Orientation="Vertical">
                 <DockPanel>
                     <Button Content="x" Click="OnDeleteCardClick" DockPanel.Dock="Right"/>
-                    <TextBox x:Name="TitleText"/>
+                    <TextBox x:Name="TitleText" Watermark="Название столбца"/>
                 </DockPanel>
             
                 <TextBlock x:Name="ColumnID"/>

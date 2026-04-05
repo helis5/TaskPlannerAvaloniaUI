@@ -5,7 +5,7 @@ namespace TaskPlanner;
 
 public class Column : BaseEntity
 {
-    private readonly string _title = "Название столбца";
+    private readonly string _title = "";
     public string Name { get; set; }
     //Здесь будем хранить коллекцию карточек для этого столбца
     public ObservableCollection<TaskCard> Cards { get; set; } = new();
