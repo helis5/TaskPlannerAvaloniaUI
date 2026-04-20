@@ -1,5 +1,7 @@
+using System;
 using Avalonia;
 using Avalonia.Controls;
+using Avalonia.Input;
 using Avalonia.Interactivity;
 using Avalonia.Markup.Xaml;
 
@@ -30,6 +32,16 @@ public partial class SubTaskControl : UserControl
             //Из родительской карточки удаляем принимаемую подзадачу
             TaskCard PCard = subtask.ParentCard;
             PCard.SubTasks.Remove(subtask);
+        }
+    }
+
+    private void TextBox_KeyDown(object? sender, KeyEventArgs e)
+    {
+        if (e.Key == Key.Enter && sender is TextBox textBox)
+        {
+            e.Handled = true;
+            var topLevel = TopLevel.GetTopLevel(textBox);
+            topLevel?.FocusManager?.ClearFocus();
         }
     }
 }

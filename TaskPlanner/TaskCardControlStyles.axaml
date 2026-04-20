@@ -22,15 +22,44 @@
     </Style>-->
 
 
-    <Style Selector="Border#SubTasksBorder">
+    <!--<Style Selector="Border#SubTasksBorder">
         <Setter Property="CornerRadius" Value="10"/>
         
         <Setter Property="BorderThickness" Value="0"/>
-        <!--<Setter Property="Padding" Value="10"/>-->
-        <!--<Setter Property="Margin" Value="0 0 15 15"/>-->
+        ~1~<Setter Property="Padding" Value="10"/>@1@
+        ~1~<Setter Property="Margin" Value="0 0 15 15"/>@1@
         <Setter Property="BorderBrush" Value="Black"/>
     </Style>
+    <Style Selector="Border#TaskCardBorder TextBox">
+        <Setter Property="MaxWidth" Value="200"/>
+        <Setter Property="AcceptsReturn" Value="False"/>
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="CaretBrush" Value="White"/>
+    </Style>
 
+    ~1~ Внутренний Border шаблона TextBox @1@
+    <Style Selector="Border#TaskCardBorder TextBox /template/ Border">
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="BorderThickness" Value="0"/>
+    </Style>
+
+    ~1~ Состояние :focus — тоже перекрывает фон @1@
+    <Style Selector="Border#TaskCardBorder TextBox:focus /template/ Border">
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="BorderThickness" Value="0"/>
+    </Style>
+
+    ~1~ pointerover на самом TextBox @1@
+    <Style Selector="Border#TaskCardBorder TextBox:pointerover /template/ Border">
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="BorderThickness" Value="0"/>
+    </Style>-->
+    
+    <!--<Style Selector="DockPanel:pointerover TextBox#TaskCardText">
+        <Setter Property="Background" Value="Black"/>
+    </Style>-->
     <Style Selector="TextBox:disabled /template/ Border#PART_BorderElement">
         <!--<Setter Property="BorderBrush" Value="Green" />-->
         <Setter Property="BorderThickness" Value="0" />

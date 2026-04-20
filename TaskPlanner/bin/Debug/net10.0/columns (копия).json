@@ -1,0 +1,137 @@
+[
+  {
+    "Name": "\u0412 \u043F\u043B\u0430\u043D\u0430\u0445",
+    "Cards": [
+      {
+        "Title": "111",
+        "PriorityIndex": 1,
+        "IsEnabled": false,
+        "SubTasks": [
+          {
+            "Title": "111",
+            "Id": "efc6a081-79cd-42c4-a01e-89ccc4e1a35b"
+          },
+          {
+            "Title": "222",
+            "Id": "928a924e-aa70-4a61-83e0-4caa97e2ffae"
+          },
+          {
+            "Title": "3333",
+            "Id": "89f88016-7f06-4e19-9819-0df26cda063a"
+          }
+        ],
+        "Id": "7f8bd153-c2e4-4b98-8039-e9e97cf2b799"
+      },
+      {
+        "Title": "111",
+        "PriorityIndex": 0,
+        "IsEnabled": false,
+        "SubTasks": [
+          {
+            "Title": "65",
+            "Id": "00546865-6154-41b0-9425-20ffe6a1cff4"
+          }
+        ],
+        "Id": "446cb9fc-84bd-4c56-8cae-c72cf65e4e7e"
+      }
+    ],
+    "Id": "7bd798fd-ef95-47e6-adf7-3e87d29121d3"
+  },
+  {
+    "Name": "\u0412 \u043F\u0440\u043E\u0446\u0435\u0441\u0441\u0435",
+    "Cards": [
+      {
+        "Title": "\u041F\u0440\u043E\u0435\u043A\u0442",
+        "PriorityIndex": 2,
+        "IsEnabled": false,
+        "SubTasks": [
+          {
+            "Title": "\u0423\u043B\u0443\u0447\u0448\u0438\u0442\u044C \u0438\u043D\u0442\u0435\u0440\u0444\u0435\u0439\u0441 ",
+            "Id": "37e66663-7eef-4dd1-8269-379801bf19bb"
+          },
+          {
+            "Title": "\u0414\u043E\u0431\u0430\u0432\u0438\u0442\u044C \u043D\u043E\u0432\u044B\u0439 \u0444\u0443\u043D\u043A\u0446\u0438\u043E\u043D\u0430\u043B",
+            "Id": "df799f23-6aac-4a28-a6ae-d807ae06859c"
+          },
+          {
+            "Title": "\u0447\u0442\u043E-\u0442\u043E \u0435\u0449\u0451",
+            "Id": "d97c6edf-8acd-4f41-9d12-3713b1152a0c"
+          }
+        ],
+        "Id": "00e84f96-6dbd-497d-b641-49c305f97450"
+      },
+      {
+        "Title": "\u0422\u0435\u0441\u0442\u043E\u0432\u0430\u044F \u0437\u0430\u0434\u0430\u0447\u0430",
+        "PriorityIndex": 0,
+        "IsEnabled": true,
+        "SubTasks": [
+          {
+            "Title": "\u0430\u0439\u0446\u0443\u0430\u0439\u0446\u0443\u0430\u0439",
+            "Id": "bd660dae-4774-4015-82d8-d02aa050e7ba"
+          },
+          {
+            "Title": "\u0446\u0443\u0430\u0439\u0446",
+            "Id": "d099cbc2-dc11-4c46-b443-b15d10bfbca6"
+          }
+        ],
+        "Id": "1f748808-088a-4903-8c2f-5d33a6b43e11"
+      },
+      {
+        "Title": "",
+        "PriorityIndex": 1,
+        "IsEnabled": false,
+        "SubTasks": [],
+        "Id": "93d1c79e-eccf-4bfe-a11f-4971f2df677f"
+      }
+    ],
+    "Id": "ff9ef5b4-60f2-4abd-9bbb-e4ed1db24e47"
+  },
+  {
+    "Name": "\u0412\u044B\u043F\u043E\u043B\u043D\u0435\u043D\u043E",
+    "Cards": [
+      {
+        "Title": "\u0444\u0439\u0430\u0439\u0446\u0443",
+        "PriorityIndex": 1,
+        "IsEnabled": false,
+        "SubTasks": [
+          {
+            "Title": "\u0430\u0430\u0430",
+            "Id": "4094d090-2339-4f9d-88c3-ec58c0aedf96"
+          },
+          {
+            "Title": "\u0430",
+            "Id": "31550087-7e57-4a6c-b9ad-9d49bba9507b"
+          }
+        ],
+        "Id": "85632d30-b159-4c7c-b24e-306e22122e4c"
+      },
+      {
+        "Title": "",
+        "PriorityIndex": 0,
+        "IsEnabled": false,
+        "SubTasks": [],
+        "Id": "33605b29-f810-480a-96f5-1c8f775e12a9"
+      },
+      {
+        "Title": "",
+        "PriorityIndex": 2,
+        "IsEnabled": false,
+        "SubTasks": [],
+        "Id": "0aead498-874a-4f9c-a6d4-00533d3a09fe"
+      },
+      {
+        "Title": "\u0444\u044B\u0432\u0430\u0444\u044B\u0432\u0430",
+        "PriorityIndex": 1,
+        "IsEnabled": false,
+        "SubTasks": [
+          {
+            "Title": "\u0430\u0430",
+            "Id": "0fc65723-b50d-44b8-863b-9374b1b2b2b4"
+          }
+        ],
+        "Id": "2aa57521-fb26-4d4a-9de5-c37ab7b2d2d3"
+      }
+    ],
+    "Id": "aab26d37-5322-4e65-bd70-54fa1aeab12f"
+  }
+]

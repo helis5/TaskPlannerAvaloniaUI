@@ -22,7 +22,8 @@
                 <TextBox x:Name="SubTaskText" HorizontalAlignment="Left" Watermark="Пункт" 
                          TextWrapping="Wrap"
                          MaxWidth="200"
-                         AcceptsReturn="False"/>
+                         AcceptsReturn="False"
+                         KeyDown="TextBox_KeyDown"/>
                 <Button HorizontalAlignment="Right" Click="OnDeleteClick">x</Button>
             </DockPanel>
         </StackPanel>

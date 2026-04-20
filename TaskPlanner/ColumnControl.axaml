@@ -5,15 +5,18 @@
              xmlns:models="clr-namespace:TaskPlanner"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              x:Class="TaskPlanner.ColumnControl">
-    <UserControl.Styles>
+    <!--<UserControl.Styles>
         <StyleInclude Source="/ColumnControlStyles.axaml"/>
-    </UserControl.Styles>
+    </UserControl.Styles>-->
     <Border Classes="BaseBorder">
         <ScrollViewer>
             <StackPanel Orientation="Vertical">
                 <DockPanel>
                     <Button Content="x" Click="OnDeleteCardClick" DockPanel.Dock="Right"/>
-                    <TextBox x:Name="TitleText" Watermark="Название столбца"/>
+                    <TextBox x:Name="TitleText" 
+                             Watermark="Название столбца"
+                             Background="Transparent"
+                             Foreground="White"/>
                 </DockPanel>
             
                 <TextBlock x:Name="ColumnID"/>

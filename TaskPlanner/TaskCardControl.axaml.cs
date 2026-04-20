@@ -2,6 +2,7 @@ using System.Drawing;
 using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Controls.Notifications;
+using Avalonia.Input;
 using Avalonia.Interactivity;
 using Avalonia.Markup.Xaml;
 using Avalonia.Media;
@@ -36,6 +37,7 @@ public partial class TaskCardControl : UserControl
             }
             
         };
+        
         /*if (DataContext is TaskCard card)
         {
             card.SubTasks.Add(new SubTask("random subtask", card));
@@ -139,6 +141,15 @@ public partial class TaskCardControl : UserControl
         {
             card.PriorityIndex = (card.PriorityIndex + 1) % PriorityColors.Length;
             StripeBorder.Background = PriorityColors[card.PriorityIndex];
+        }
+    }
+    private void TextBox_KeyDown(object? sender, KeyEventArgs e)
+    {
+        if (e.Key == Key.Enter && sender is TextBox textBox)
+        {
+            e.Handled = true;
+            var topLevel = TopLevel.GetTopLevel(textBox);
+            topLevel?.FocusManager?.ClearFocus();
         }
     }
 }

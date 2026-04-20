@@ -30,12 +30,12 @@
 
                 <StackPanel Orientation="Vertical">
                     <DockPanel>
-                        <TextBox x:Name="TaskCardText" HorizontalAlignment="Left" Watermark="Заголовок" 
-                                 FontWeight="Bold" 
-                                 FontSize="16"
-                                 TextWrapping="Wrap"
-                                 MaxWidth="200"
-                                 AcceptsReturn="False"/>
+                        <Border x:Name="TaskCardBorder" Background="Black">
+                            <TextBox x:Name="TaskCardText"
+                                     Watermark="Заголовок"
+                                     KeyDown="TextBox_KeyDown"/>
+                        </Border>
+                        
                         <Button HorizontalAlignment="Right" Click="OnDeleteClick">x</Button>
                     </DockPanel>
 
