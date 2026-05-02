@@ -19,7 +19,7 @@
                              Foreground="White"/>
                 </DockPanel>
             
-                <TextBlock x:Name="ColumnID"/>
+                <TextBlock x:Name="ColumnID" IsVisible="False"/>
                 <Button Click="OnAddCardClick">Новая задача</Button>
                 <ItemsControl x:Name="Tasks">
                     <ItemsControl.ItemTemplate>

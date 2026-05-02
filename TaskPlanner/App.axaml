@@ -17,29 +17,22 @@
             <Setter Property="Background" Value="Transparent"/>
         </Style>
 
-        <Style Selector="TextBox">
+        <Style Selector="TextBox /template/ Border#PART_BorderElement">
             <Setter Property="Background" Value="Transparent"/>
+        </Style>
+
+        <Style Selector="TextBox:focus /template/ Border#PART_BorderElement">
+            <Setter Property="Background" Value="Black"/>
+        </Style>
+        <Style Selector="TextBox">
             <Setter Property="Foreground" Value="White"/>
             <Setter Property="CaretBrush" Value="White"/>
             <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="FocusAdorner" Value="{x:Null}"/>
         </Style>
-    
-        <Style Selector="TextBox /template/ Border">
-            <Setter Property="Background" Value="Transparent"/>
-        </Style>
-    
-        <Style Selector="TextBox:focus /template/ Border">
-            <Setter Property="Background" Value="Black"/>
-        </Style>
-    
-        <Style Selector="TextBox:pointerover /template/ Border">
+
+        <Style Selector="TextBox:pointerover /template/ Border#PART_BorderElement">
             <Setter Property="Background" Value="#333333"/>
-        </Style>
-        <Style Selector="TextBox:pointerover">
-            <Setter Property="Foreground" Value="White"/>
-        </Style>
-        <Style Selector="TextBox:focus">
-            <Setter Property="Foreground" Value="White"/>
         </Style>
     </Application.Styles>
 </Application>

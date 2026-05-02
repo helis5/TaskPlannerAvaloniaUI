@@ -30,7 +30,7 @@
 
                 <StackPanel Orientation="Vertical">
                     <DockPanel>
-                        <Border x:Name="TaskCardBorder" Background="Black">
+                        <Border x:Name="TaskCardBorder">
                             <TextBox x:Name="TaskCardText"
                                      Watermark="Заголовок"
                                      KeyDown="TextBox_KeyDown"/>
