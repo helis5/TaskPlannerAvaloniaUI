@@ -33,6 +33,8 @@
                         <Border x:Name="TaskCardBorder">
                             <TextBox x:Name="TaskCardText"
                                      Watermark="Заголовок"
+                                     TextWrapping="Wrap"
+                                     AcceptsReturn="False"
                                      KeyDown="TextBox_KeyDown"/>
                         </Border>
                         
