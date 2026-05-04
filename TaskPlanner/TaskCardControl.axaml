@@ -8,11 +8,11 @@
     <UserControl.Styles>
         <StyleInclude Source="/TaskCardControlStyles.axaml"/>
     </UserControl.Styles>
-    <Border HorizontalAlignment="Stretch" x:Name="DraggableCard">
+    <Border HorizontalAlignment="Stretch" x:Name="DraggableCard" DoubleTapped="OnCardDoubleTapped">
         <Border.ContextMenu>
             <ContextMenu>
                 <MenuItem Header="Новая подзадача" Click="OnNewSubTask"/>
-                <MenuItem Header="Редактировать задачу" Click="OnEditSubTasks"/>
+                <MenuItem Header="Редактировать задачу" Click="OnCardDoubleTapped"/>
                 <MenuItem Header="Переместить вправо" Click="OnMoveToRight"/>
                 <MenuItem Header="Переместить влево" Click="OnMoveToLeft"/>
                 <MenuItem Header="Изменить срочность" Click="OnChangePriority"/>

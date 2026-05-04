@@ -105,7 +105,7 @@ public partial class TaskCardControl : UserControl
             card.SubTasks.Add(new SubTask("", card));
         }
     }
-    private void OnEditSubTasks(object sender, RoutedEventArgs e)
+    private void OnCardDoubleTapped(object sender, RoutedEventArgs e)
     {
         if (DataContext is TaskCard card)
         {
@@ -152,4 +152,6 @@ public partial class TaskCardControl : UserControl
             topLevel?.FocusManager?.ClearFocus();
         }
     }
+    
+    
 }

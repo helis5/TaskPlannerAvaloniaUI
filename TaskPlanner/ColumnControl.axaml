@@ -8,7 +8,7 @@
     <!--<UserControl.Styles>
         <StyleInclude Source="/ColumnControlStyles.axaml"/>
     </UserControl.Styles>-->
-    <Border Classes="BaseBorder">
+    <Border Classes="BaseBorder" MinWidth="250" MaxWidth="300">
         <ScrollViewer>
             <StackPanel Orientation="Vertical">
                 <DockPanel>
@@ -16,7 +16,10 @@
                     <TextBox x:Name="TitleText" 
                              Watermark="Название столбца"
                              Background="Transparent"
-                             Foreground="White"/>
+                             Foreground="White"
+                             TextWrapping="Wrap"
+                             AcceptsReturn="False"
+                             KeyDown="TitleText_KeyDown"/>
                 </DockPanel>
             
                 <TextBlock x:Name="ColumnID" IsVisible="False"/>

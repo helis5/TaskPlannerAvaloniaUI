@@ -1,5 +1,6 @@
 using Avalonia.Controls;
 using Avalonia.Controls.Notifications;
+using Avalonia.Input;
 using Avalonia.Interactivity;
 
 namespace TaskPlanner;
@@ -50,5 +51,14 @@ public partial class ColumnControl : UserControl
     {
         if (DataContext is Column column)
             column.Cards.Add(new TaskCard("", column));
+    }
+    private void TitleText_KeyDown(object? sender, KeyEventArgs e)
+    {
+        if (e.Key == Key.Enter && sender is TextBox textBox)
+        {
+            e.Handled = true;
+            var topLevel = TopLevel.GetTopLevel(textBox);
+            topLevel?.FocusManager?.ClearFocus();
+        }
     }
 }

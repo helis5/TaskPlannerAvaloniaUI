@@ -1,6 +1,7 @@
 using System.Threading.Tasks;
 using Avalonia.Controls;
 using Avalonia.Controls.Notifications;
+using Avalonia.Input;
 using Avalonia.Interactivity;
 
 namespace TaskPlanner;
@@ -15,6 +16,12 @@ public partial class MainWindow : Window
         AppState.Columns.Add(new Column("Автоматический столбец"));
         var column = AppState.Columns[0];
         column.Cards.Add(new TaskCard("Купить молоко", column));
+    }
+    
+    private void TextBox_KeyDown(object? sender, KeyEventArgs e)
+    {
+        if (e.Key == Key.Enter && sender is TextBox textBox)
+            OnAddColumnClick(sender, e);
     }
 
     private void OnAddColumnClick(object sender, RoutedEventArgs e)

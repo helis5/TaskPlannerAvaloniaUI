@@ -13,7 +13,7 @@
     <Grid RowDefinitions="50, *" x:Name="MainGrid">
         <Border x:Name="Header">
             <StackPanel Orientation="Horizontal">
-                <TextBox x:Name="NewTitle" Watermark="Название столбца"/>
+                <TextBox x:Name="NewTitle" Watermark="Название столбца" KeyDown="TextBox_KeyDown"/>
                 <Button Content="+ Добавить столбец" Click="OnAddColumnClick"/>
                 <Button Content="Сохранить в файл" Click="OnSaveClick"/>
                 <Button Content="Загрузить из файла" Click="OnLoadClick"/>
