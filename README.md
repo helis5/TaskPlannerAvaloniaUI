@@ -1,5 +1,5 @@
 Простой планировщик задач на C# .NET AvaloniaUI с реализацией создания/удаления столбцов, задач и подзадач к каждой задаче, перемещения задач между столбцами и импортом/экспортом JSON файла с задачами.
-<img width="1223" height="754" alt="image" src="https://github.com/user-attachments/assets/21215cf8-c7dc-4cde-8051-4651ae962b29" />
 
 
+<img width="957" height="756" alt="изображение" src="https://github.com/user-attachments/assets/9d29930d-3fa8-4f71-97fc-635a5bc1e266" />
 
